@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "rootDir": "./",
+        "target": "es2025",
+        "module": "nodenext",
+        "lib": [
+            "esnext"
+        ],
+        "moduleResolution": "nodenext",
+        "esModuleInterop": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "skipDefaultLibCheck": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "./dist",
+        "strictPropertyInitialization": false,
+        "paths": {
+            "~/*": [
+                "./src/*"
+            ],
+            "~~/*": [
+                "./*"
+            ]
+        }
+    },
+    "ts-node": {
+        "require": [
+            "tsconfig-paths/register"
+        ]
+    }
+}
